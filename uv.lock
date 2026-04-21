@@ -758,7 +758,6 @@ dependencies = [
     { name = "starlette", marker = "platform_machine == 'x86_64' and sys_platform == 'linux'" },
     { name = "tokenizers", marker = "platform_machine == 'x86_64' and sys_platform == 'linux'" },
     { name = "torch", marker = "platform_machine == 'x86_64' and sys_platform == 'linux'" },
-    { name = "torchao", marker = "platform_machine == 'x86_64' and sys_platform == 'linux'" },
     { name = "torchvision", marker = "platform_machine == 'x86_64' and sys_platform == 'linux'" },
     { name = "tqdm", marker = "platform_machine == 'x86_64' and sys_platform == 'linux'" },
     { name = "transformers", marker = "platform_machine == 'x86_64' and sys_platform == 'linux'" },
@@ -780,7 +779,7 @@ requires-dist = [
     { name = "flask", specifier = ">=3.1.2" },
     { name = "flask-socketio", specifier = ">=5.5.1" },
     { name = "ftfy", specifier = ">=6.3.1" },
-    { name = "huggingface-hub", extras = ["cli"], specifier = ">=0.36.0" },
+    { name = "huggingface-hub", specifier = ">=0.36.0" },
     { name = "imageio", specifier = ">=2.37.2" },
     { name = "imageio-ffmpeg", specifier = ">=0.6.0" },
     { name = "lmdb", specifier = ">=1.7.5" },
@@ -801,7 +800,6 @@ requires-dist = [
     { name = "starlette", specifier = ">=0.50.0" },
     { name = "tokenizers", specifier = ">=0.20.3" },
     { name = "torch", specifier = ">=2.5.0", index = "https://download.pytorch.org/whl/cu121" },
-    { name = "torchao", specifier = "==0.6.1" },
     { name = "torchvision", specifier = ">=0.19.0", index = "https://download.pytorch.org/whl/cu121" },
     { name = "tqdm", specifier = ">=4.67.1" },
     { name = "transformers", specifier = ">=4.49.0" },
@@ -1668,14 +1666,6 @@ dependencies = [
 ]
 wheels = [
     { url = "https://download-r2.pytorch.org/whl/cu121/torch-2.5.1%2Bcu121-cp310-cp310-linux_x86_64.whl", hash = "sha256:92af92c569de5da937dd1afb45ecfdd598ec1254cf2e49e3d698cb24d71aae14" },
-]
-
-[[package]]
-name = "torchao"
-version = "0.6.1"
-source = { registry = "https://pypi.org/simple" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/4a/da/1b38da2c13dd33fa32656e39f4d2bbd1d34585964c6b2da54771cd1b670c/torchao-0.6.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:188fb6fb63595fe90f7b96aff93536e8e0bd131c8cfa39258da790d52affd805", size = 2225408, upload-time = "2024-10-21T20:54:11.522Z" },
 ]
 
 [[package]]
