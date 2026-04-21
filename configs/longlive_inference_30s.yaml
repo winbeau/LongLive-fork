@@ -16,7 +16,7 @@ model_kwargs:
 data_path: prompts/MovieGenVideoBench_num128.txt
 output_folder: videos/MovieGenVideoBench_30s
 inference_iter: -1
-num_output_frames: 480
+num_output_frames: 123
 use_ema: false
 seed: 0
 num_samples: 1
